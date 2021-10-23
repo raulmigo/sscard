@@ -1,6 +1,6 @@
 let name = document.getElementById('name').textContent
 
-let barcode = document.getElementById('clubid').textContent;
+let barcode = document.getElementById('clubid').value;
 	
 	JsBarcode("#barcode", barcode, {
   format: "CODE128",
