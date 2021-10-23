@@ -1,8 +1,8 @@
-let name = document.getElementById('name').textContent
+let name = document.getElementById('name').textContent;
 
-let barcode = document.getElementById('clubid').value;
+let barcode = document.getElementById('clubid').textContent;
 	
-	JsBarcode("#barcode", barcode, {
+JsBarcode("#barcode", barcode, {
   format: "CODE128",
   lineColor: "#000000",
   width:4,
