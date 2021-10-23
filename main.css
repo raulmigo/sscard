@@ -1,0 +1,197 @@
+@media print {
+  #crmbuttons {
+	display: none;
+	}
+	#photo {
+	float: right;
+	position: absolute;
+  height: 100px;
+  width: 200px;
+	top: 0px;
+  left: 31%;
+	overflow: hidden
+}
+	@page {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    body {
+        padding-top: 10px;
+        padding-bottom: 72px ;
+    }
+}
+
+#name {
+	font-size: 25px;
+}
+
+#clubid {
+	font-size: 20px;
+	
+}
+
+#issueDate {
+	font-size: 18px;
+	
+}
+
+.crm-container{
+     width: 500px;
+		 height: 500px
+ }
+#crmbuttons{
+    width: 100%;
+    margin: 100px auto;
+}
+.crmBtn{
+    width: 49.5% !important;
+		height: 50px;
+}
+
+#logo{
+  line-height: 500%;
+}
+
+#name{
+  line-height: 200%;
+}
+
+#clubid{
+  line-height: 200%;
+}
+
+#expiration{
+  line-height: 200%;
+}
+
+#barcode{
+	margin-bottom:100px
+  text-align: right;
+	float:right
+}
+
+#photo {
+	float: right;
+	position: absolute;
+  height: 150px;
+  width: 200px;
+	top: 20px;
+	bottom: 20px;
+  right: 60%;
+	overflow: hidden;
+}
+
+img {
+    width:200px; /* you can use % */
+    height: auto;
+}
+
+.float-container{
+	position: relative;
+}
+
+#abc {
+width:550px;
+height:500px;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#ffffff;
+overflow:hidden;
+}
+
+.form {
+max-width:500px;
+min-width:500px;
+padding:10px 50px;
+border:2px solid gray;
+border-radius:10px;
+font-family:raleway;
+background-color:#313131
+}
+
+img#close {
+position:absolute;
+right:-14px;
+top:-14px;
+cursor:pointer
+}
+div#popupContact {
+position:absolute;
+left:50%;
+top:17%;
+margin-left:-202px;
+font-family:'Raleway',sans-serif
+}
+p {
+margin-top:30px
+}
+h2 {
+padding:20px 35px;
+margin:-10px -50px;
+text-align:center;
+border-radius:10px 10px 0 0
+}
+hr {
+margin:10px -50px;
+border:0;
+border-top:1px solid #ccc
+}
+input[type=text] {
+width:82%;
+padding:10px;
+margin-top:30px;
+border:1px solid #ccc;
+padding-left:40px;
+font-size:16px;
+font-family:raleway
+}
+#name {
+background-image:url(../images/name.jpg);
+background-repeat:no-repeat;
+background-position:5px 7px
+}
+#email {
+background-image:url(../images/email.png);
+background-repeat:no-repeat;
+background-position:5px 7px
+}
+textarea {
+background-image:url(../images/msg.png);
+background-repeat:no-repeat;
+background-position:5px 7px;
+width:82%;
+height:95px;
+padding:10px;
+resize:none;
+margin-top:30px;
+border:1px solid #ccc;
+padding-left:40px;
+font-size:16px;
+font-family:raleway;
+margin-bottom:30px
+}
+
+#submit {
+margin-top:30px;
+text-decoration:none;
+width:100%;
+text-align:center;
+display:block;
+background-color:#6991f5;
+color:#fff;
+padding:10px 0;
+font-size:20px;
+cursor:pointer;
+border-radius:5px;
+}
+
+span {
+font-weight:300
+}
+
+button {
+cursor:pointer;
+}
+
