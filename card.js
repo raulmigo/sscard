@@ -2,7 +2,7 @@ let name = document.getElementById('name').textContent;
 
 let barcode = document.getElementById('clubid').textContent;
 	
-JsBarcode("#barcode", barcode, {
+JsBarcode("#barcode", 'C12345', {
   format: "CODE128",
   lineColor: "#000000",
   width:4,
