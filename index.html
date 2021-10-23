@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" type="text/css" media="print"/>
+</head>
+
+<body>
+<div id="customerdtl-crm-print-club" class="crm-container">
+	<div id="print-div">
+		<div class="float-child"> 
+				<span id="logo">
+      	<img src="https://drive.google.com/thumbnail?id=1fdPWPHYvvEjfShzdCclH6NbtqpWUg9P7">
+  		</span>
+	  <div class="float-child">	 
+			<span id="photo">
+			</span>
+	  </div>	
+	</div>
+  <div>
+    <span id="name">JOHN SMITH</span>
+  </div>
+  <div>
+    <span id="clubid">C12345</span>
+  </div>
+  <div>
+    <span id="issueDate">Issue Date</span>
+  </div>
+    <div>
+    <span id='barcode-value'>
+			<img id="barcode"/>
+		</span>
+  </div>
+</div>
+	
+<div id="abc">
+<!-- Popup Div Starts Here -->
+<div id="popupContact">
+<!-- Contact Us Form -->
+<div id="form" name="form" action="" enctype="multipart/form-data" method="POST">
+ <h2>Member Info</h2>
+ <hr>
+ <input id="formname" name="name"  placeholder="Customer Name" type="text">
+ <input id="memberId" name="text"  placeholder="Club ID# (e.g. C12345)" type="text">
+ <input id="issue" name="text" type="text"  placeholder="Issue Date MM/DD/YYYY"></input>
+	<button class="crmBtn" onclick="fillOutCard()" type="submit" id="submit">Send</button>
+</div>
+</div>
+<!-- Popup Div Ends Here -->
+</div>
+
+<!-- Display Popup Button -->
+<div id="crmbuttons">
+<button class="crmBtn" type="submit" id="my_camera" onClick="take_snapshot()">
+			Take Picture
+		</button>
+		<button class="crmBtn" id="popup" onclick="div_show()" type="submit">
+			Customer Info
+		</button>
+  </div>
+ </div>
+</body> 
+ 
+
+</html>
