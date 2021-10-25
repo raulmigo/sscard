@@ -5,10 +5,10 @@
 	#photo {
 	float: right;
 	position: absolute;
-  height: 100px;
-  width: 200px;
+        height: 100px;
+        width: 200px;
 	top: 0px;
-  left: 40%;
+        left: 50%;
 	overflow: hidden
 }
 	@page {
@@ -18,7 +18,13 @@
     body {
         padding-top: 10px;
         padding-bottom: 72px ;
-	left:0;
+	margin-left: 0;
+	left: 0;
+    }
+    .crm-container {
+	padding-left: 0px;
+	margin-left: 0;
+	left: 0;
     }
 }
 
