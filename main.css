@@ -1,40 +1,40 @@
 @media print {
   #crmbuttons {
-			display: none;
+	display: none;
 	}
 	span#photo {
 		left: 72%;
 	}
 	#photo {
-      left: 72%;
-		  height: 125px;
-    	width: 125px;
+      		left: 72%;
+		height: 125px;
+    		width: 125px;
  }
 	img#shoot-straight {
-    	width:auto; /* you can use % */
-    	height: auto;
+    		width:auto; /* you can use % */
+    		height: auto;
  }
 	@page {
-        margin-top: 0;
-        margin-bottom: 0;
+        	margin-top: 0;
+        	margin-bottom: 0;
  }
 	svg {
-				width:200px; /* you can use % */
-				height: 50px;
+		width:200px; /* you can use % */
+		height: 50px;
 	}
    body {
-				 font-weight: bold;
-				 padding-top: 10px;
-				 padding-bottom: 72px ;
-				 margin-left: 0;
-				 left: 0;
+		font-weight: bold;
+		padding-top: 10px;
+		padding-bottom: 72px ;
+		margin-left: 0;
+		left: 0;
     }
     .crm-container {
-				font-weight: bold;
-				padding-left: 0px;
-				margin-left: 0;
-				left: 0;
-			  width: 450px;
+		font-weight: bold;
+		padding-left: 0px;
+		margin-left: 0;
+		left: 0;
+		width: 450px;
     		height: 475px
     }
 }
@@ -238,5 +238,5 @@ button {
 span#photo {
 		height: 125px;
 		width: 125px;
-		left: 22%
+		left: 16%
 }
