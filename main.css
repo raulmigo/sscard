@@ -8,7 +8,7 @@
         height: 50px;
         width: 50px;
 	top: 0px;
-        left: 40%;
+        left: 60%;
 	overflow: hidden
 }
 	@page {
@@ -86,7 +86,7 @@
   	width: 200px;
 	top: 20px;
 	bottom: 20px;
-  	left: 40%;
+  	left: 20%;
 	overflow: hidden;
 }
 
