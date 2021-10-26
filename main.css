@@ -16,12 +16,14 @@
         margin-bottom: 0;
     }
     body {
+	font-weight: bold;
         padding-top: 10px;
         padding-bottom: 72px ;
 	margin-left: 0;
 	left: 0;
     }
     .crm-container {
+	font-weight: bold;
 	padding-left: 0px;
 	margin-left: 0;
 	left: 0;
