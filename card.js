@@ -5,8 +5,8 @@ let barcode = document.getElementById('clubid').textContent;
 JsBarcode("#barcode", 'C12345', {
   format: "CODE128",
   lineColor: "#000000",
-  width:4,
-  height:80,
+  width: 2,
+  height: 40,
   displayValue: true
 });
 
