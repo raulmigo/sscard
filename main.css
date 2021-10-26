@@ -5,10 +5,10 @@
 	#photo {
 	float: right;
 	position: absolute;
-        height: 100px;
-        width: 200px;
+        height: 75px;
+        width: 100px;
 	top: 0px;
-        left: 50%;
+        left: 60%;
 	overflow: hidden
 }
 	@page {
