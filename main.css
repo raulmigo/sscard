@@ -5,8 +5,8 @@
 	#photo {
 	float: right;
 	position: absolute;
-        height: 75px;
-        width: 100px;
+        height: 50px;
+        width: 50px;
 	top: 0px;
         left: 60%;
 	overflow: hidden
