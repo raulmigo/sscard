@@ -3,12 +3,22 @@
 	display: none;
 	}
 	#photo {
-      left: 50%%;
-}
+      	left: 72%;
+	height: 125px;
+    	width: 125px;
+	}
 	@page {
         margin-top: 0;
         margin-bottom: 0;
     }
+	svg {
+    	width:200px; /* you can use % */
+    	height: 50px;
+	}
+	img#shoot-straight {
+   	 width: auto; /* you can use % */
+   	 height: auto;
+	}
     body {
 				font-weight: bold;
         padding-top: 10px;
