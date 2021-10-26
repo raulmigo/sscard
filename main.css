@@ -2,6 +2,9 @@
   #crmbuttons {
 	display: none;
 	}
+	span#photo {
+	left: 72%;
+	}
 	#photo {
       	left: 72%;
 	height: 125px;
