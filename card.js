@@ -7,7 +7,7 @@ JsBarcode("#barcode", 'C12345', {
   lineColor: "#000000",
   width: 2,
   height: 40,
-  displayValue: true
+  displayValue: false
 });
 
 Webcam.attach( '#photo' );
@@ -53,7 +53,7 @@ function fillOutCard() {
   lineColor: "#000000",
   width:4,
   height:80,
-  displayValue: true
+  displayValue: false
 });
 	
 	
