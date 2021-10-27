@@ -42,7 +42,7 @@ function fillOutCard() {
 	div_hide();
 	document.getElementById('name').textContent = document.getElementById('formname').value;
 	
-	document.getElementById('clubid').textContent = "Club ID# " + document.getElementById('memberId').value;
+	document.getElementById('clubid').textContent = "Member ID #"  + document.getElementById('memberId').value;
 	
 	document.getElementById('issueDate').textContent = "Issue Date: " + document.getElementById('issue').value;
 	
