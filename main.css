@@ -1,33 +1,104 @@
-@media print { /* view for print preview */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	span#photo {
+		left: 80%
+	}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+	span#photo {
+		left: 80%
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+	span#photo {
+		left: 80%
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	span#photo {
+		left: 80%
+	}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+	span#photo {
+		left: 80%
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	span#photo {
+		left: 80%
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+	span#photo {
+		left: 22%
+	}
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+	span#photo {
+		left: 22%
+	}
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+	span#photo {
+		left: 80%
+	}
+}
+
+@media print {
   #crmbuttons {
 			display: none;
 	}
 	span#photo {
-		float: right;
-    position: absolute;
-    height: 125px;
-    width: 125px;
-    top: 20px;
-    bottom: 20px;
-    left: 58%;
-    overflow: hidden;
+		left: 72%;
 	}
-	
+	#photo {
+      left: 72%;
+		  height: 125px;
+    	width: 125px;
+ }
 	img#shoot-straight {
-    	width: auto; /* you can use % */
     	height: auto;
  }
 	@page {
         margin-top: 0;
         margin-bottom: 0;
  }
-	svg#barcode {
-			margin-bottom:5%;
-  		text-align: right;
-			display: block;
-			margin-left: 50%;
-			width: 60%; 
-			height: 20%
+	svg {
+				width:200px; /* you can use % */
+				height: 50px;
 	}
    body {
 				 font-weight: bold;
@@ -46,15 +117,13 @@
     }
 }
 
-/* view for web % */
-
 #name {
 	font-size: 25px;
-	font-weight: bold; 
 }
 
 #clubid {
-	font-size: 22px;
+	font-size: 20px;
+	
 }
 
 #issueDate {
@@ -64,22 +133,26 @@
 
 .crm-container{
 			  width: 450px;
-    		height: 350px
+    		height: 475px
  }
-.print-div {
-    overflow: hidden;
-}
 #crmbuttons{
     width: 100%;
     margin: 100px auto;
 }
 .crmBtn{
-    width: 30% !important;
+    width: 30%;
     height: 50px;
 }
 
+button.sendBtn {
+	  height: 50px;
+    margin: -20px -50px; 
+    position: relative;
+    left: 10%;
+}
+
 #logo{
-  line-height: 500%;
+  line-height: 400%;
 }
 
 #name{
@@ -97,18 +170,7 @@
 #barcode{
 	margin-bottom:10px;
   text-align: right;
-	display: block;
-	margin-left: 50%;
-}
-
-span#photo {
-    width: 125px;
-    height: 125px;
-}
-
-video {
-		width: 200px;
-    height: 150px;
+	float:right
 }
 
 #photo {
@@ -123,7 +185,7 @@ video {
 }
 
 img#shoot-straight {
-    width: auto; /* you can use % */
+    width:auto; /* you can use % */
     height: auto;
 }
 
@@ -145,6 +207,7 @@ svg {
 		position:fixed;
 		background-color:#ffffff;
 		overflow:hidden;
+		box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 }
 
 .form {
@@ -196,22 +259,19 @@ input[type=text] {
 		border:1px solid #ccc;
 		padding-left:40px;
 		font-size:16px;
-		font-family:raleway
+		font-family:raleway;
 }
 
 #name {
-		background-image:url(../images/name.jpg);
 		background-repeat:no-repeat;
 		background-position:5px 7px
 }
 #email {
-		background-image:url(../images/email.png);
 		background-repeat:no-repeat;
 		background-position:5px 7px
 }
 
 textarea {
-		background-image:url(../images/msg.png);
 		background-repeat:no-repeat;
 		background-position:5px 7px;
 		width:82%;
@@ -229,9 +289,7 @@ textarea {
 #submit {
 		margin-top:30px;
 		text-decoration:none;
-		width:100%;
-		text-align:center;
-		display:block;
+		width:94%;
 		background-color:#6991f5;
 		color:#fff;
 		padding:10px 0;
@@ -252,3 +310,4 @@ span#photo {
 		height: 125px;
 		width: 125px;
 }
+
