@@ -14,7 +14,7 @@
 	}
 	
 	img#shoot-straight {
-    		width:auto; /* you can use % */
+    		width: auto; /* you can use % */
     		height: auto;
  }
 	@page {
@@ -123,12 +123,12 @@ video {
 }
 
 img#shoot-straight {
-    width:150px; /* you can use % */
+    width: auto; 
     height: auto;
 }
 
 svg {
-    width:200px; /* you can use % */
+    width:200px;
     height: auto;
 }
 
