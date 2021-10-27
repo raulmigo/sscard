@@ -1,105 +1,33 @@
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-	span#photo {
-		left: 80%
-	}
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px) {
-	span#photo {
-		left: 80%
-	}
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
-	span#photo {
-		left: 80%
-	}
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-	span#photo {
-		left: 80%
-	}
-}
-
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-	span#photo {
-		left: 80%
-	}
-}
-
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-	span#photo {
-		left: 80%
-	}
-}
-
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-	span#photo {
-		left: 22%
-	}
-}
-
-/* Large screens ----------- */
-@media only screen 
-and (min-width : 1824px) {
-	span#photo {
-		left: 22%
-	}
-}
-
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-	span#photo {
-		left: 80%
-	}
-}
-
-@media print {
+@media print { /* view for print preview */
   #crmbuttons {
 			display: none;
 	}
 	span#photo {
-		left: 72%;
+		float: right;
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    top: 20px;
+    bottom: 20px;
+    left: 58%;
+    overflow: hidden;
 	}
-	#photo {
-      left: 72%;
-		  height: 125px;
-    	width: 125px;
- }
+	
 	img#shoot-straight {
-    	width:auto; /* you can use % */
+    	width: auto; /* you can use % */
     	height: auto;
  }
 	@page {
         margin-top: 0;
         margin-bottom: 0;
  }
-	svg {
-				width:200px; /* you can use % */
-				height: 50px;
+	svg#barcode {
+			margin-bottom:5%;
+  		text-align: right;
+			display: block;
+			margin-left: 50%;
+			width: 60%; 
+			height: 20%
 	}
    body {
 				 font-weight: bold;
@@ -118,13 +46,15 @@ only screen and (min-device-pixel-ratio : 1.5) {
     }
 }
 
+/* view for web % */
+
 #name {
 	font-size: 25px;
+	font-weight: bold; 
 }
 
 #clubid {
-	font-size: 20px;
-	
+	font-size: 22px;
 }
 
 #issueDate {
@@ -134,8 +64,11 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
 .crm-container{
 			  width: 450px;
-    		height: 475px
+    		height: 350px
  }
+.print-div {
+    overflow: hidden;
+}
 #crmbuttons{
     width: 100%;
     margin: 100px auto;
@@ -164,7 +97,18 @@ only screen and (min-device-pixel-ratio : 1.5) {
 #barcode{
 	margin-bottom:10px;
   text-align: right;
-	float:right
+	display: block;
+	margin-left: 50%;
+}
+
+span#photo {
+    width: 125px;
+    height: 125px;
+}
+
+video {
+		width: 200px;
+    height: 150px;
 }
 
 #photo {
@@ -179,7 +123,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 }
 
 img#shoot-straight {
-    width:150px; /* you can use % */
+    width: auto; /* you can use % */
     height: auto;
 }
 
@@ -256,15 +200,18 @@ input[type=text] {
 }
 
 #name {
+		background-image:url(../images/name.jpg);
 		background-repeat:no-repeat;
 		background-position:5px 7px
 }
 #email {
+		background-image:url(../images/email.png);
 		background-repeat:no-repeat;
 		background-position:5px 7px
 }
 
 textarea {
+		background-image:url(../images/msg.png);
 		background-repeat:no-repeat;
 		background-position:5px 7px;
 		width:82%;
@@ -305,4 +252,3 @@ span#photo {
 		height: 125px;
 		width: 125px;
 }
-
