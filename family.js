@@ -1,12 +1,16 @@
 document.getElementById('family-popup').style.display = "none";
+
 console.log(localStorage);
 console.log(localStorage.length);
+
 if (localStorage.length > 0) {
     let clubiditem = JSON.parse( localStorage.getItem( 'clubidKey' ) );
     let issueDate = JSON.parse( localStorage.getItem( 'issued' ) );
+    let customerName = JSON.parse( localStorage.getItem( 'name' ) );
 
     document.getElementById('clubid').textContent = "MEMBER ID #"  + clubiditem;
     document.getElementById('issueDate').textContent = "ISSUE DATE: "  + issueDate;
+    document.getElementById('member1').textContent = "MEMBER:  "  + customerName;
 
     JsBarcode("#barcode", clubiditem, {
       format: "CODE128",
@@ -16,8 +20,10 @@ if (localStorage.length > 0) {
       displayValue: true
     });
 } else {
-    document.getElementById('clubid').textContent = "CLUB ID #C12345";
+    document.getElementById('clubid').textContent = "MEMBER ID #C12345";
     document.getElementById('issueDate').textContent = "ISSUE DATE: DD/MM/YYYY";
+    document.getElementById('member1').textContent = "MEMBER: JOHN SMITH";
+
     JsBarcode("#barcode", 'C12345', {
       format: "CODE128",
       lineColor: "#000000",
@@ -25,9 +31,7 @@ if (localStorage.length > 0) {
       height: 40,
       displayValue: true
     });
-}
-
-
+};
 
 function div_show() {
     document.getElementById('family-popup').style.display = "block";
@@ -58,14 +62,14 @@ function required(inputtx) {
 function fillOutCard() {
 	div_hide();
 
-    if (required(document.getElementById('formname1'))) {
+    /*if (required(document.getElementById('formname1'))) {
         document.getElementById('member1').textContent = "MEMBER: " + document.getElementById('formname1').value;
     } else {
         document.getElementById('member1').textContent = document.getElementById('formname1').innerHTML = "";                                                                                        ;
-    };
+    };*/
 
     if (required(document.getElementById('formname2'))) {
-        document.getElementById('member2').textContent = "MEMBER: " + document.getElementById('formname2').value;
+        document.getElementById('member2').textContent = "SPOUSE: " + document.getElementById('formname2').value;
     } else {
         document.getElementById('member2').textContent = document.getElementById('formname2').innerHTML = "";
     };

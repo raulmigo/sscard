@@ -110,4 +110,12 @@ span#issueDate {
     padding-left: 15px
 }
 
+button.crmBtn {
+    width: 75%
+}
+
+#formname2 {
+    width: 60%;
+    text-align: center;
+}
 

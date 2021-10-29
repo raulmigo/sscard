@@ -63,6 +63,8 @@ function fillOutCard() {
 	
 	let barcode = document.getElementById('memberId').value;
 	let issueDate = document.getElementById('issue').value;
+	let customerName = document.getElementById('formname').value;
+
 
 	//localstorage
 	if (barcode.length > 0) {
@@ -72,6 +74,11 @@ function fillOutCard() {
 	if (issueDate.length > 0) {
 	    localStorage.setItem( 'issued', JSON.stringify(issueDate) );
 	}
+
+	if (customerName.length > 0) {
+	    localStorage.setItem( 'name', JSON.stringify(customerName) );
+	}
+
 	//local storage end
 	
 	JsBarcode("#barcode", barcode, {
@@ -86,5 +93,6 @@ function fillOutCard() {
 window.onbeforeunload = function() {
   localStorage.removeItem('clubidKey');
   localStorage.removeItem('issued');
+  localStorage.removeItem('name');
   return '';
 };
