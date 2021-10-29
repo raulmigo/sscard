@@ -32,11 +32,6 @@ div#print-div {
      text-align: center;
 }
 
-#barcode-div{
-    height: 80px;
-    width: 100%
-}
-
 div#family-popup {
     padding-top: 3%
 }
@@ -100,7 +95,8 @@ svg {
 
 #barcode-div{
     height: 80px;
-    width: 100%
+    width: 100%;
+    padding-top: 2%
 }
 
 span#clubid {
