@@ -35,9 +35,24 @@ document.getElementById('abc').style.display = "none";
 }
 
 
-console.log(name);
-	//document.getElementById('clubid')
-	//document.getElementById('expiration')
+function family_show() {
+document.getElementById('family-div').style.display = "block";
+}
+//Function to Hide Popup
+function family_hide(){
+document.getElementById('family-div').style.display = "none";
+}
+
+
+function single_show() {
+document.getElementById('customerdtl-crm-print-club').style.display = "block";
+}
+//Function to Hide Popup
+function single_hide(){
+document.getElementById('customerdtl-crm-print-club').style.display = "none";
+}
+
+
 function fillOutCard() {
 	div_hide();
 	document.getElementById('name').textContent = document.getElementById('formname').value;
@@ -54,9 +69,5 @@ function fillOutCard() {
   width:4,
   height:80,
   displayValue: false
-});
-	
-	
-	//console.log(document.getElementById("formname"));	
-}
-
+    });
+};

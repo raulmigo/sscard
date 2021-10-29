@@ -34,7 +34,7 @@
   <div>
     <span id="issueDate">Issue Date: 10/22/2021</span>
   </div>
-    <div>
+    <div id="barcode-div">
     <span id='barcode-span'>
 		<svg id="barcode"></svg>
 	</span>
@@ -45,35 +45,42 @@
 <!-- Popup Div Starts Here -->
 <div id="popupContact">
 <!-- Contact Us Form -->
-<div id="form" name="form" action="" enctype="multipart/form-data" method="POST">
- <h2>Member Info</h2>
- <hr>
- <input id="formname" name="name"  placeholder="Customer Name" type="text">
- <input id="memberId" name="text"  placeholder="Club ID# (e.g. C12345)" type="text">
- <input id="issue" name="text" type="text"  placeholder="Issue Date MM/DD/YYYY"></input>
-	<button class="crmBtn" onclick="fillOutCard()" type="submit" id="submit">Send</button>
-</div>
-</div>
-<!-- Popup Div Ends Here -->
+		<div id="form" name="form" action="" enctype="multipart/form-data" method="POST">
+			<h2>Member Info</h2>
+			<hr>
+			<input id="formname" name="name"  placeholder="Customer Name" type="text">
+			<input id="memberId" name="text"  placeholder="Club ID# (e.g. C12345)" type="text">
+			<input id="issue" name="text" type="text"  placeholder="Issue Date MM/DD/YYYY"></input>
+			<button class="crmBtn" onclick="fillOutCard()" type="submit" id="submit">Send</button>
+		</div>
+	</div>
 </div>
 
-<!-- Display Popup Button -->
-<div id="crmbuttons">
+</div>
+
+<div id="buttons">
+	<div id="crmbuttons">
 		<button class="crmBtn" id="open_camera" onclick="openCamera()" type="submit">
 			Open Camera
 		</button>
-<button class="crmBtn" type="submit" id="my_camera" onClick="take_snapshot()">
+		<button class="crmBtn" type="submit" id="my_camera" onClick="take_snapshot()">
 			Take Picture
 		</button>
 		<button class="crmBtn" id="popup" onclick="div_show()" type="submit">
 			Customer Info
 		</button>
+	</div>
+</div>
 
-  </div>
- </div>
-
-
-
+<div id="template-div">
+	<div id="temp-header"><h2>Family Membership</h2></div>
+	<hr>
+	<a href="family.html">
+		<button class="crmBtn" id="template" onclick="changeTemplate()" type="submit">
+			Generate Family Membership Card
+		</button>
+	</a>
+</div>
 
 <script type="text/javascript" src="card.js"></script>
 </body> 
