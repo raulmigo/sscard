@@ -17,7 +17,7 @@ if (localStorage.length > 0) {
       lineColor: "#000000",
       width: 2,
       height: 40,
-      displayValue: true
+      displayValue: false
     });
 } else {
     document.getElementById('clubid').textContent = "MEMBER ID #C12345";
@@ -29,7 +29,7 @@ if (localStorage.length > 0) {
       lineColor: "#000000",
       width: 2,
       height: 40,
-      displayValue: true
+      displayValue: false
     });
 };
 
