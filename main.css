@@ -156,7 +156,8 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
 #crmbuttons{
     width: 450px;
-    height: auto
+    height: auto;
+    margin-top: 5%
 }
 .crmBtn{
     width: 30%;
@@ -245,7 +246,7 @@ svg {
 
 #abc {
     width:550px;
-    height:500px;
+    height:600px;
     top:0;
     left:0;
     display:none;
@@ -277,7 +278,8 @@ div#popupContact {
     left:50%;
     top:17%;
     margin-left:-202px;
-    font-family:'Raleway',sans-serif
+    font-family:'Raleway',sans-serif;
+    padding-right: 15%
 }
 
 p {

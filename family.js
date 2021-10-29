@@ -1,4 +1,31 @@
 document.getElementById('family-popup').style.display = "none";
+console.log(localStorage);
+console.log(localStorage.length);
+if (localStorage.length > 0) {
+    let clubiditem = JSON.parse( localStorage.getItem( 'clubidKey' ) );
+    let issueDate = JSON.parse( localStorage.getItem( 'issued' ) );
+
+    document.getElementById('clubid').textContent = "MEMBER ID #"  + clubiditem;
+    document.getElementById('issueDate').textContent = "ISSUE DATE: "  + issueDate;
+
+    JsBarcode("#barcode", clubiditem, {
+      format: "CODE128",
+      lineColor: "#000000",
+      width: 2,
+      height: 40,
+      displayValue: true
+    });
+} else {
+    document.getElementById('clubid').textContent = "CLUB ID #C12345";
+    document.getElementById('issueDate').textContent = "ISSUE DATE: DD/MM/YYYY";
+    JsBarcode("#barcode", 'C12345', {
+      format: "CODE128",
+      lineColor: "#000000",
+      width: 2,
+      height: 40,
+      displayValue: true
+    });
+}
 
 
 
@@ -12,13 +39,13 @@ function div_hide(){
 
 let barcode = document.getElementById('clubid').textContent;
 
-JsBarcode("#barcode", 'C12345', {
-  format: "CODE128",
-  lineColor: "#000000",
-  width: 2,
-  height: 40,
-  displayValue: false
-});
+//JsBarcode("#barcode", 'C12345', {
+//  format: "CODE128",
+//  lineColor: "#000000",
+//  width: 2,
+//  height: 40,
+//  displayValue: false
+//});
 
 function required(inputtx) {
     if (inputtx.value.length <= 0) {
@@ -67,17 +94,22 @@ function fillOutCard() {
         document.getElementById('member6').textContent = document.getElementById('formname6').innerHTML = "";
     };
 
-	document.getElementById('clubid').textContent = "Member ID #"  + document.getElementById('memberId').value;
+    //if (required(document.getElementById('clubid'))) {
 
-	document.getElementById('issueDate').textContent = "Issue Date: " + document.getElementById('issue').value;
+    //}
+
+	//document.getElementById('clubid').textContent = "Member ID #"  + document.getElementById('memberId').value;
+
+	//document.getElementById('issueDate').textContent = "Issue Date: " + document.getElementById('issue').value;
 
 	let barcode = document.getElementById('memberId').value;
 
 	JsBarcode("#barcode", barcode, {
-  format: "CODE128",
-  lineColor: "#000000",
-  width:4,
-  height:80,
-  displayValue: false
+      format: "CODE128",
+      lineColor: "#000000",
+      width:4,
+      height:80,
+      displayValue: true
     });
 };
+

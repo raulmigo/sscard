@@ -7,18 +7,18 @@ JsBarcode("#barcode", 'C12345', {
   lineColor: "#000000",
   width: 2,
   height: 40,
-  displayValue: false
+  displayValue: true
 });
 
 Webcam.attach( '#photo' );
 
 function take_snapshot() {
 	console.log("snapshot clicked!!")
-			// take snapshot and get image data
+        // take snapshot and get image data
 	Webcam.snap(function(data_uri) {
-				// display results in page
-				document.getElementById('photo').innerHTML ='<img src="'+data_uri+'"/>';
-			});
+        // display results in page
+            document.getElementById('photo').innerHTML ='<img src="'+data_uri+'"/>';
+        });
 }
 
 function openCamera(){
@@ -62,12 +62,29 @@ function fillOutCard() {
 	document.getElementById('issueDate').textContent = "Issue Date: " + document.getElementById('issue').value;
 	
 	let barcode = document.getElementById('memberId').value;
+	let issueDate = document.getElementById('issue').value;
+
+	//localstorage
+	if (barcode.length > 0) {
+	    localStorage.setItem( 'clubidKey', JSON.stringify(barcode) );
+	}
+
+	if (issueDate.length > 0) {
+	    localStorage.setItem( 'issued', JSON.stringify(issueDate) );
+	}
+	//local storage end
 	
 	JsBarcode("#barcode", barcode, {
-  format: "CODE128",
-  lineColor: "#000000",
-  width:4,
-  height:80,
-  displayValue: false
+      format: "CODE128",
+      lineColor: "#000000",
+      width:4,
+      height:80,
+      displayValue: true
     });
+};
+
+window.onbeforeunload = function() {
+  localStorage.removeItem('clubidKey');
+  localStorage.removeItem('issued');
+  return '';
 };
