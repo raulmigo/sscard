@@ -102,7 +102,7 @@ div#family-popup {
     display:none;
     position:fixed;
     overflow:hidden;
-    background-color:#e7e3e3;
+    background-color:#fbfbfb;
     box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(82, 82, 82,.4)
 }
 

@@ -288,7 +288,7 @@ svg {
     left:0;
     display:none;
     position:fixed;
-    background-color:#e7e3e3;
+    background-color:#fbfbfb;
     overflow:hidden;
     box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(82, 82, 82,.4)
 }
