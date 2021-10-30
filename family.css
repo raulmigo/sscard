@@ -21,12 +21,13 @@ h2 {
 }
 
 #form h2 {
-    font-family:georgia,serif;font-size:18px;
+    font-size: 22px;
+    padding:20px 35px;
+    font-family:georgia,serif;
     font-style:italic;
-    color:#3E2F2F;
+    color:#323131;
     letter-spacing:0;
     line-height:1.429em;
-    padding:0;
     text-align:center;
 }
 
@@ -115,16 +116,15 @@ div#family-popup {
     background-color:#313131
 }
 
-#form h2 {
-		padding:20px 35px;
-		text-align:center;
-		border-radius:10px 10px 0 0
-}
-
 #form hr {
-		margin:10px -50px;
-		border:0;
-		border-top:1px solid #ccc
+    margin:10px -50px;
+    border:0;
+    width: 90%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px;
 }
 
 input[type=text] {
