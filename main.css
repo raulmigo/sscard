@@ -178,17 +178,30 @@ button#template{
 }
 
 button.crmBtn{
-    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
-    inset 0 -2px 5px 1px rgba(139,66,8,1),
-    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    box-shadow: 0 3px 6px rgba(135, 130, 130), 0 3px 6px rgba(255,255,255,.4),
+    inset 0 -2px 5px 1px rgba(68,68,68),
+    inset 0 -1px 1px 3px rgba(255,255,255);
     background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
-    border: 1px solid #a55d07;
-    color: rgb(120,50,5);
-    text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
+    border: 1px solid #525251;
+    color: rgb(40,39,39);
+    text-shadow: 0 2px 2px rgba(94,94,92);
     transition: all .2s ease-in-out;
     background-size: 100% 100%;
     background-position:center;
     border-radius: 5px;
+    box-shadow: inset 0 0 0 1px #c9c9c9, $hl;
+    		background:
+    			conic-gradient(
+    				  #d7d7d7, #c3c3c3, #cccccc, #c6c6c6,
+    				  #d3d3d3, #d8d8d8, #d5d5d5, #d8d8d8,
+    				  #d3d3d3, #c5c5c5, #c0c0c0, #bfbfbf,
+    				  #d0d0d0, #d9d9d9, #d1d1d1, #c5c5c5,
+    				  #c8c8c8, #d7d7d7, #d5d5d5, #cdcdcd,
+    				  #c4c4c4, #d9d9d9, #cecece, #c5c5c5,
+    				  #c5c5c5, #cdcdcd, #d8d8d8, #d9d9d9,
+    				  #d7d7d7) content-box,
+    			linear-gradient(#d4d4d4, #d4d4d4);
+    			  padding-box, $sh;
 
 }
 
@@ -203,24 +216,16 @@ button:after {
 button:focus,
 button:hover {
     background-size: 150% 150%;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23),
+    box-shadow: 0 10px 20px rgba(155,155,155,0.19), 0 6px 6px rgba155,155,155,0.23),
     inset 0 -2px 5px 1px #b17d10,
-    inset 0 -1px 1px 3px rgba(250,227,133,1);
-    border: 1px solid rgba(165,93,7,.6);
-    color: rgba(120,50,5,.8);
+    inset 0 -1px 1px 3px rgba(155,155,155,1);
+    color: rgba(0,0,0,.8);
 }
-
-button:active {
-    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
-    inset 0 -2px 5px 1px #b17d10,
-    inset 0 -1px 1px 3px rgba(250,227,133,1);
-}
-
 
 div#template-div {
     width: 450px;
     height: auto;
-    margin-top:3%;
+    margin-top:1%;
 }
 
 div#temp-header {
@@ -292,7 +297,7 @@ svg {
     position:fixed;
     background-color:#e7e3e3;
     overflow:hidden;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4)
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(82, 82, 82,.4)
 }
 
 .form {
