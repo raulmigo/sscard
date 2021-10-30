@@ -344,9 +344,30 @@ h2 {
 
 #form hr {
     margin:10px -50px;
-    border:0;
-    border-top:1px solid #ccc
+    border-top:1px solid #ccc;
+    border:none;
+    height: 20px;
+    width: 90%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px;
 }
+
+hr {
+    margin:10px -50px;
+    border-top:1px solid #ccc;
+    border:none;
+    height: 20px;
+    width: 90%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px;
+}
+
 
 input[type=text] {
     width:82%;
@@ -356,6 +377,14 @@ input[type=text] {
     padding-left:40px;
     font-size:16px;
     font-family:raleway;
+    border:none;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-box-shadow:0 0 5px #666 inset;
+    -moz-box-shadow:0 0 5px #666 inset;
+    box-shadow:0 0 5px #666 inset;
+    text-indent:5px;
 }
 
 #name {

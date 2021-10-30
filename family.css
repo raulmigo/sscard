@@ -127,13 +127,21 @@ div#family-popup {
 }
 
 input[type=text] {
-		width:40%;
-		padding:10px;
-		margin-top:2%;
-		border:1px solid #ccc;
-		padding-left:40px;
-		font-size:16px;
-		font-family:raleway;
+    width:40%;
+    padding:10px;
+    margin-top:2%;
+    border:1px solid #ccc;
+    padding-left:40px;
+    font-size:16px;
+    font-family:raleway;
+    border:none;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-box-shadow:0 0 5px #666 inset;
+    -moz-box-shadow:0 0 5px #666 inset;
+    box-shadow:0 0 5px #666 inset;
+    text-indent:5px;
 }
 
 svg {
