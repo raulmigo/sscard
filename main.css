@@ -160,9 +160,8 @@ only screen and (min-device-pixel-ratio : 1.5) {
     margin-top: 5%
 }
 .crmBtn{
-    width: 30%;
+    width: 32%;
     height: 50px;
-    margin-left: 2%
 }
 
 button.sendBtn {
@@ -177,6 +176,46 @@ button#template{
     margin-top:5%;
     width: 100%;
 }
+
+button.crmBtn{
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+    border: 1px solid #a55d07;
+    color: rgb(120,50,5);
+    text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
+    transition: all .2s ease-in-out;
+    background-size: 100% 100%;
+    background-position:center;
+    border-radius: 5px;
+
+}
+
+button:after {
+    position: absolute;
+    opacity: 0;
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:focus,
+button:hover {
+    background-size: 150% 150%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23),
+    inset 0 -2px 5px 1px #b17d10,
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    border: 1px solid rgba(165,93,7,.6);
+    color: rgba(120,50,5,.8);
+}
+
+button:active {
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px #b17d10,
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+}
+
 
 div#template-div {
     width: 450px;
@@ -251,9 +290,9 @@ svg {
     left:0;
     display:none;
     position:fixed;
-    background-color:#ffffff;
+    background-color:#e7e3e3;
     overflow:hidden;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4)
 }
 
 .form {
@@ -285,6 +324,16 @@ div#popupContact {
 p {
     margin-top:30px
 }
+
+h2 {
+ font-family:georgia,serif;font-size:18px;
+ font-style:italic;
+ color:#3E2F2F;
+ letter-spacing:0;
+ line-height:1.429em;
+ padding:0;
+ text-align:center;
+ }
 
 #form h2 {
     padding:20px 35px;
@@ -337,8 +386,6 @@ textarea {
     margin-top:30px;
     text-decoration:none;
     width:94%;
-    background-color:#6991f5;
-    color:#fff;
     padding:10px 0;
     font-size:20px;
     cursor:pointer;
